@@ -25,3 +25,44 @@ Such is the life of the engineer
 * SparkFun Motor Driver - Dual TB6612FNG ROB -14450
 * Sparkfun DC Barrel Jack Adapter PRT - 10811
 * Adafruit Bluefruit LE - UART Friend 2479
+
+## Wiring The Robot
+
+Connect battery pack to + and - (6V power, all chips support it)
+
+### Motor Driver
+* VM -> + rail
+* VCC -> + rail
+* GND -> - rail
+* AO1 -> right motor + pin
+* AO2 -> right motor - pin
+* BO1 -> left motor + pin
+* BO2 -> left motor - pin
+* PWMA -> p22 mbed
+* PWMB -> p21 mbed
+* AI1 -> p6 mbed
+* AI2 -> p5 mbed
+* BI1 -> p7 mbed
+* BI2 -> p8 mbed
+* STBY -> + rail
+### Bluetooth
+* Vin -> + rail
+* GND -> - rail
+* CTS -> - rail
+* TXO -> p27 mbed
+* RXI -> p28 mbed
+### Sonar
+* Vcc -> + rail
+* GND -> - rail
+* Trig -> p12 mbed
+* Echo -> p13 mbed
+### Amp + Speaker
+* IN+ -> p18 mbed
+* IN- -> - rail
+* PWR+ -> + rail
+* PWR- -> - rail
+* OUT+ -> + on the speaker
+* OUT- -> - on the speaker
+### Mbed
+* GND -> - on the rail (bind battery and mbed grounds)
+* Vin -> + on the rail
