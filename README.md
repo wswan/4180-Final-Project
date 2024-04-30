@@ -1,5 +1,6 @@
 # 4180-Final-Project: The Money Machine
 Repo for final project for a class, a bluetooth robot that uses sonar to detect and annoy roommates
+By Wesley Swanson
 
 ## Ok but what is the money machine?
 
@@ -66,3 +67,24 @@ Connect battery pack to + and - (6V power, all chips support it)
 ### Mbed
 * GND -> - on the rail (bind battery and mbed grounds)
 * Vin -> + on the rail
+
+## Current Code Functionality
+
+By connecting your phone to the Adafruit Bluefruit chip in UART, you can drive the robot. Up on the pad is up but left is down, right is left turn, and down is right turn. This needs to be patched at some point.
+
+With a 500mm (half a meter) change in front of the sonar, the speaker will load up and play the first 28 seconds of Money Machine by 100 gecs. The sonar is very sensitive and the sound cone will detect basically any motion in front of it.
+This may be a problem if you wish to contain your sanity. 
+
+## Future Work
+
+Make some patch updates and only have the LEDs play when Money Machine is loaded in
+
+Add an LED controller and a lot more LEDs
+
+Get a better speaker
+
+Add WD40 to the wheels
+
+Program a robot dance routine
+
+Build an interface for a user to input any song/color pattern into the robot for custom annoyances
